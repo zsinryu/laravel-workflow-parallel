@@ -22,7 +22,7 @@ class TestChildWorkflow extends Workflow
                 'index' => $i,
             ]);
 
-            usleep(1000000);
+            usleep(100);
         }
 
         $results = yield ChildWorkflowStub::all($workflows);
